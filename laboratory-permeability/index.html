@@ -116,6 +116,42 @@ header.hero, .hero { position: relative !important; }
 .leaflet-control { z-index: 800 !important; }
 .leaflet-container { z-index: 1 !important; }
 </style>
+<style id="inline-link-style">
+p a[href^="/"]:not(.cta-btn):not(.hero-cta){color:var(--accent,#0A2540) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):hover{text-decoration-color:currentColor;opacity:.85}
+</style>
+<style id="navbar-compact-fix">
+/* Compactar navbar para que el menú entre completo */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.nav-item.has-dd .nav-cat-link{padding:.4rem .25rem !important}
+.nav-item.has-dd .nav-arrow{font-size:.7rem !important;margin-left:.15rem !important}
+.cta-btn{padding:.45rem .8rem !important;font-size:.72rem !important;letter-spacing:.03em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+.logo-text .main{font-size:.95rem !important}
+.logo-text .sub{font-size:.72rem !important}
+/* Para layouts aberdeen/classic con clase distinta */
+header nav a,.menu a{font-size:.78rem !important}
+@media (max-width:1100px){
+  .nav-item{font-size:.7rem !important}
+  .navbar .nav{gap:.4rem !important}
+  .cta-btn{padding:.4rem .65rem !important;font-size:.68rem !important}
+}
+</style>
+<style id="layout-defensive">
+html,body{overflow-x:hidden;max-width:100vw}
+body>*{max-width:100vw}
+@media (min-width:901px){
+  aside{position:relative}
+  aside+main,aside~main,aside~div>main{margin-left:0}
+  .content-area{display:flex;gap:1rem}
+}
+@media (max-width:900px){
+  aside{width:100% !important;position:static !important;height:auto !important}
+  .navbar{flex-wrap:wrap}
+}
+</style>
 </head><body>
 
 <nav class="navbar">
@@ -186,7 +222,7 @@ header.hero, .hero { position: relative !important; }
 <hr style="border:none;height:2px;background:linear-gradient(90deg,transparent,#A16207,transparent);margin:2rem 0;width:60%;margin-left:auto;margin-right:auto">
 <p>ASTM D2434-19 (Constant Head Permeability of Granular Soils), ASTM D5856-15 (Falling Head Permeability of Fine-Grained Soils), IBC 2021 Section 1804 (Drainage and Subsurface Water Control)</p></section>
 
-<section class="section"><h2>Quick answers</h2><details><summary>What is the difference between falling head and constant head permeability tests?</summary><p>The constant head test maintains a stable water level gradient through the sample and is used for granular soils with k > 10⁻⁴ cm/s. The falling head test lets the water level drop as it flows through the sample, making it suitable for fine-grained soils with lower permeability. Both methods calculate the coefficient of permeability k using Darcy's law, but the falling head method accommodates very low flow rates that would be impractical to measure under constant head.</p></details><details><summary>How much does a laboratory permeability test cost in Anaheim?</summary><p>The typical cost for a falling or constant head permeability test in Anaheim ranges from US$440 to US$550 per sample. This includes specimen preparation, saturation, testing, and a full report with k value at 20°C, void ratio, and dry density. The price varies with sample complexity and whether flexible wall confining pressure is required.</p></details><details><summary>Why is laboratory permeability testing important for projects in Anaheim?</summary><p>Anaheim's alluvial soils from the Santa Ana River floodplain have highly variable permeability. A site with sand lenses may drain rapidly, while adjacent clay layers restrict flow. Laboratory testing isolates the soil's intrinsic hydraulic conductivity under controlled conditions, eliminating the influence of field heterogeneity. This data is essential for sizing drainage systems, designing retaining walls with weep holes, and evaluating groundwater seepage into excavations.</p></details></section>
+<section class="section"><h2>Quick answers</h2><details><summary>What is the difference between falling head and constant head permeability tests?</summary><p>The constant head test maintains a stable water level gradient through the sample and is used for granular soils with k > 10⁻⁴ cm/s. The falling head test lets the water level drop as it flows through the sample, making it suitable for fine-grained soils with lower permeability. Both methods calculate the coefficient of permeability k using Darcy's law, but the falling head method accommodates very low flow rates that would be impractical to measure under constant head.</p></details><details><summary>How much does a laboratory permeability test cost in Anaheim?</summary><p>The typical cost for a falling or constant head permeability test in Anaheim ranges from US$440 to US$550 per sample. This includes specimen preparation, saturation, testing, and a full report with k value at 20°C, void ratio, and dry density. The price varies with sample complexity and whether flexible wall confining pressure is required.</p></details><details><summary>Why is laboratory permeability testing important for projects in Anaheim?</summary><p>Anaheim's alluvial soils from the Santa Ana River floodplain have highly variable permeability. A site with sand lenses may drain rapidly, while adjacent clay layers restrict flow. <a href="/laboratory/">Laboratory</a> testing isolates the soil's intrinsic hydraulic conductivity under controlled conditions, eliminating the influence of field heterogeneity. This data is essential for sizing drainage systems, designing retaining walls with weep holes, and evaluating groundwater seepage into excavations.</p></details></section>
 
 
 
